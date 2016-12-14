@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.epicodus.adventcalendar.MainActivity">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="110dp"
+        android:id="@+id/ribbonImageView"
+        android:src="@drawable/ribbon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="@dimen/present"
+        android:layout_height="@dimen/present"
+        android:id="@+id/redImageView"
+        android:src="@drawable/red"
+        android:layout_below="@+id/ribbonImageView"
+        android:layout_alignRight="@+id/ribbonImageView"
+        android:layout_alignEnd="@+id/ribbonImageView" />
+
+    <ImageView
+        android:layout_width="@dimen/present"
+        android:layout_height="@dimen/present"
+        android:id="@+id/billyImageView"
+        android:src="@drawable/billy"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_above="@+id/starImageView"
+        android:layout_toRightOf="@+id/ribbonImageView"
+        android:layout_toEndOf="@+id/ribbonImageView" />
+
+    <ImageView
+        android:layout_width="@dimen/present"
+        android:layout_height="@dimen/present"
+        android:id="@+id/snowImageView"
+        android:src="@drawable/snow"
+        android:layout_below="@+id/redImageView"
+        android:layout_alignLeft="@+id/redImageView"
+        android:layout_alignStart="@+id/redImageView"/>
+
+    <ImageView
+        android:layout_width="@dimen/present"
+        android:layout_height="@dimen/present"
+        android:id="@+id/starImageView"
+        android:src="@drawable/star"
+        android:layout_alignLeft="@+id/billyImageView"
+        android:layout_alignTop="@+id/snowImageView"/>
+
+    <ImageView
+        android:layout_width="@dimen/present"
+        android:layout_height="@dimen/present"
+        android:id="@+id/greenImageView"
+        android:src="@drawable/green"
+        android:layout_alignLeft="@+id/snowImageView"
+        android:layout_below="@+id/snowImageView"/>
+
+    <ImageView
+        android:layout_width="@dimen/present"
+        android:layout_height="@dimen/present"
+        android:id="@+id/twoImageView"
+        android:src="@drawable/two"
+        android:layout_alignLeft="@+id/starImageView"
+        android:layout_alignTop="@+id/greenImageView"/>
+
+    <ImageView
+        android:layout_width="@dimen/present"
+        android:layout_height="@dimen/present"
+        android:id="@+id/elfImageView"
+        android:src="@drawable/elf"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
