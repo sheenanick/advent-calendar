@@ -45,8 +45,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mDetector = new GestureDetector(this,this);
         mDetector.setOnDoubleTapListener(this);
 
-
-//
 //        GestureDetector ribbonGesture = new GestureDetector() {
 //            @Override
 //            public boolean onDoubleTap(MotionEvent e) {
@@ -56,8 +54,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        };
 //
 //        mRibbonGesture = new GestureDetector(this, ribbonGesture);
-        //
-
 
         merryChristmas = MediaPlayer.create(this, R.raw.merrychristmas);
         bahHumbug = MediaPlayer.create(this, R.raw.bahhumbug);
@@ -87,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view == mRed) {
-            // Do something
+
         }
 
         if (view == mBilly) {
@@ -126,7 +122,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onDoubleTap(MotionEvent motionEvent) {
-//        Toast.makeText(MainActivity.this, motionEvent.toString(), Toast.LENGTH_SHORT).show();
         merryChristmas.start();
         return false;
     }
@@ -154,7 +149,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onScroll(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
-//        Toast.makeText(MainActivity.this, "OnScroll", Toast.LENGTH_SHORT).show();
         return true;
     }
 
@@ -165,7 +159,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public boolean onFling(MotionEvent motionEvent, MotionEvent motionEvent1, float v, float v1) {
-//        Toast.makeText(MainActivity.this, "Fling", Toast.LENGTH_SHORT).show();
         bahHumbug.start();
         return true;
     }
